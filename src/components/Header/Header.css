@@ -34,7 +34,7 @@ header {
   background: var(--color-primary);
 }
 
-img {
+.me__profile {
   background: linear-gradient(var(--color-primary), transparent);
   height: 30rem;
   width: 22rem;
