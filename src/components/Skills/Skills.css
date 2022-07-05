@@ -1,31 +1,14 @@
-.skills h1 {
-  display: inline;
-  position: relative;
-  text-align: center;
-}
-
-.skill1 {
-  display: grid;
-  justify-content: space-between;
-  gap: 5%;
-  margin: 3rem;
-  grid-template-columns: repeat(4, 1fr);
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.skill2 {
+.skill {
   display: grid;
   justify-content: space-between;
   gap: 5%;
   margin: 3rem;
   grid-template-columns: repeat(3, 1fr);
-  margin-left: 20%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.skill1 img,
-.skill2 img {
+.skill img {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -77,4 +60,36 @@
 
 .github:hover {
   box-shadow: inset 0 0 10px grey;
+}
+
+/**** MEDIA QUERIES FOR SKILLS ****/
+@media screen and (max-width: 1024px) {
+  .skill {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skill img {
+    gap: 20%;
+    height: 12rem;
+    width: 12rem;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .skill {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill img {
+    gap: 20%;
+    height: 12rem;
+    width: 12rem;
+  }
 }
