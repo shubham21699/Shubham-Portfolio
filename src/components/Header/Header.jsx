@@ -4,13 +4,24 @@ import Me from "../../assets/me.png";
 import "./Header.css";
 import HeaderSocials from "./HeaderSocials";
 import ReactTypingEffect from "react-typing-effect";
+import { MovingComponent } from "react-moving-text";
 
 const Header = () => {
   return (
     <header>
       <div className="container header__container">
         <h4>Hello! I'm</h4>
-        <h1>Shubham Goel</h1>
+        <MovingComponent
+          type="unfold"
+          duration="1500ms"
+          delay="0s"
+          direction="normal"
+          timing="ease"
+          iteration="1"
+          fillMode="none"
+        >
+          <h1>Shubham Goel</h1>
+        </MovingComponent>
         <ReactTypingEffect
           speed={50}
           eraseSpeed={10}

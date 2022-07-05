@@ -12,7 +12,7 @@ const data = [
   {
     id: 1,
     image: hirezen,
-    title: "Hirezen | A service provider portal",
+    title: "Hirezen | A service provider portal (Ongoing)",
     github: "https://github.com/YashKumar-0307/Hirezen",
     demo: "https://github.com/YashKumar-0307/Hirezen",
   },
@@ -56,7 +56,7 @@ const data = [
 const Projects = () => {
   return (
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>{"<PROJECTS />"}</h2>
       <div className="container project__container">
         {data.map(({ id, image, title, github, demo }) => {
           return (

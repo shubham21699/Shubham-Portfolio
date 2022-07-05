@@ -11,7 +11,7 @@ import github from "../../assets/github.png";
 const Skills = () => {
   return (
     <section id="skills">
-      <h2>Skills</h2>
+      <h2>{"<SKILLS />"}</h2>
       <div className="skill">
         <img src={cpp} alt="cpp" className="cpp" />
         <img src={html} alt="html" className="html" />
