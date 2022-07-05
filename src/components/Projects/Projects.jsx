@@ -12,44 +12,44 @@ const data = [
   {
     id: 1,
     image: hirezen,
-    title: "Hirezen",
-    github: "https://github.com",
-    demo: "https://github.com",
+    title: "Hirezen | A service provider portal",
+    github: "https://github.com/YashKumar-0307/Hirezen",
+    demo: "https://github.com/YashKumar-0307/Hirezen",
   },
   {
     id: 2,
     image: ouroom,
-    title: "Hirezen",
-    github: "https://github.com",
-    demo: "https://github.com",
+    title: "Ourooms | Communicate without any privacy issues",
+    github: "https://github.com/shubham21699/OuRoom",
+    demo: "https://ouroom.herokuapp.com/",
   },
   {
     id: 3,
     image: crypto,
-    title: "Hirezen",
-    github: "https://github.com",
-    demo: "https://github.com",
+    title: "Cryptocurrency Tracker",
+    github: "https://github.com/shubham21699/Cryptocurrency-Tracker",
+    demo: "https://cryptocurrency-tracker-c7e2d.web.app/",
   },
   {
     id: 4,
     image: tesla,
-    title: "Hirezen",
-    github: "https://github.com",
-    demo: "https://github.com",
+    title: "Tesla Landing Page Clone",
+    github: "https://github.com/shubham21699/Tesla-WebApp-Clone",
+    demo: "https://tesla-clone-d5ee2.web.app/",
   },
   {
     id: 5,
     image: extension,
-    title: "Hirezen",
-    github: "https://github.com",
-    demo: "https://github.com",
+    title: "Chrome Extension : Tab and Link Saver",
+    github: "https://github.com/shubham21699/chrome-extension-tab-and-link-saver",
+    demo: "https://github.com/shubham21699/chrome-extension-tab-and-link-saver",
   },
   {
     id: 6,
-    image: expense,
-    title: "Hirezen",
-    github: "https://github.com",
-    demo: "https://github.com",
+    image: candyCrush,
+    title: "Candy Crush Game",
+    github: "https://github.com/shubham21699/Candy-Crush",
+    demo: "https://candy-crush-game-44136.web.app/",
   },
 ];
 
@@ -63,7 +63,7 @@ const Projects = () => {
             <article key={id} className="project__item">
               <div className="project__item-image">
                 <img src={image} alt={title} />
-                <h3>{title}</h3>
+                <h4 style={{ margin: "3%" }}>{title}</h4>
                 <div className="project__item-cta">
                   <a href={github} className="btn" target="_blank">
                     Github
