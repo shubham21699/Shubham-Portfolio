@@ -7,6 +7,7 @@ import tesla from "../../assets/tesla.png";
 import extension from "../../assets/extension.png";
 import expense from "../../assets/expense.png";
 import candyCrush from "../../assets/candyCrush.png";
+import Zoom from "react-reveal/Zoom";
 
 const data = [
   {
@@ -42,7 +43,8 @@ const data = [
     id: 5,
     image: extension,
     title: "Chrome Extension : Tab and Link Saver",
-    github: "https://github.com/shubham21699/chrome-extension-tab-and-link-saver",
+    github:
+      "https://github.com/shubham21699/chrome-extension-tab-and-link-saver",
     demo: "",
     // demo: "https://github.com/shubham21699/chrome-extension-tab-and-link-saver",
   },
@@ -62,21 +64,28 @@ const Projects = () => {
       <div className="container project__container">
         {data.map(({ id, image, title, github, demo }) => {
           return (
-            <article key={id} className="project__item">
-              <div className="project__item-image">
-                <img src={image} alt={title} />
-                <h4 style={{ margin: "3%" }}>{title}</h4>
-                <div className="project__item-cta">
-                  <a href={github} className="btn gitLink" target="_blank">
-                    Github
-                  </a>
-                  {demo.length > 0 && <a href={demo} className="btn btn-primary" target="_blank">
-                    Live Project
-                  </a>
-                  }
+            <Zoom>
+              <article key={id} className="project__item">
+                <div className="project__item-image">
+                  <img src={image} alt={title} />
+                  <h4 style={{ margin: "3%" }}>{title}</h4>
+                  <div className="project__item-cta">
+                    <a href={github} className="btn gitLink" target="_blank">
+                      Github
+                    </a>
+                    {demo.length > 0 && (
+                      <a
+                        href={demo}
+                        className="btn btn-primary"
+                        target="_blank"
+                      >
+                        Live Project
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Zoom>
           );
         })}
       </div>

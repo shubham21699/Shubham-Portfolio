@@ -3,6 +3,8 @@ import "./About.css";
 import Me from "../../assets/me2.jpg";
 import { FaAward } from "react-icons/fa";
 import { RiBookOpenLine } from "react-icons/ri";
+import Roll from "react-reveal/Roll";
+import Fade from "react-reveal/Fade";
 
 const About = () => {
   return (
@@ -17,16 +19,20 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>Fresher</small>
-            </article>
-            <article className="about__card">
-              <RiBookOpenLine className="about__icon" />
-              <h5>Education</h5>
-              <small>Bachelor's in Computer Engineering</small>
-            </article>
+            <Fade left>
+              <article className="about__card">
+                <FaAward className="about__icon" />
+                <h5>Experience</h5>
+                <small>Fresher</small>
+              </article>
+            </Fade>
+            <Fade right>
+              <article className="about__card">
+                <RiBookOpenLine className="about__icon" />
+                <h5>Education</h5>
+                <small>Bachelor's in Computer Engineering</small>
+              </article>
+            </Fade>
           </div>
           <p>
             Currently a Final Year Undergrad at Thapar Institute of Engineering

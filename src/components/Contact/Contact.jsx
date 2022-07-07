@@ -5,6 +5,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import emailjs from "emailjs-com";
 import MuiAlert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
+import Fade from "react-reveal/Fade";
 
 const Contact = () => {
   const Alert = React.forwardRef(function Alert(props, ref) {
@@ -55,32 +56,36 @@ const Contact = () => {
       <h2>{"<CONTACT ME />"}</h2>
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail size={30} />
-            <h4>Send Email To</h4>
-            <h5>
-              Personal ID : {" "}
-              <a href="mailto:shubham21699@gmail.com" className="emailTag">
-                <i>shubham21699@gmail.com</i>
+          <Fade left>
+            <article className="contact__option">
+              <MdOutlineEmail size={30} />
+              <h4>Send Email To</h4>
+              <h5>
+                Personal ID :{" "}
+                <a href="mailto:shubham21699@gmail.com" className="emailTag">
+                  <i>shubham21699@gmail.com</i>
+                </a>
+              </h5>
+              <h5>
+                College ID :{" "}
+                <a href="mailto:sgoel3_be19@thapar.edu" className="emailTag">
+                  <i>sgoel3_be19@thapar.edu</i>
+                </a>
+              </h5>
+            </article>
+          </Fade>
+          <Fade right>
+            <article className="contact__option">
+              <BsWhatsapp size={30} />
+              <h4>Mobile Number</h4>
+              <h5>
+                <i>{"(+91) 9855900606"}</i>{" "}
+              </h5>
+              <a href="https://wa.me/+919855900606" target="_blank">
+                <i>Send Message on WhatsApp</i>
               </a>
-            </h5>
-            <h5>
-              College ID : {" "}
-              <a href="mailto:sgoel3_be19@thapar.edu" className="emailTag">
-                <i>sgoel3_be19@thapar.edu</i>
-              </a>
-            </h5>
-          </article>
-          <article className="contact__option">
-            <BsWhatsapp size={30} />
-            <h4>Mobile Number</h4>
-            <h5>
-              <i>{"(+91) 9855900606"}</i>{" "}
-            </h5>
-            <a href="https://wa.me/+919855900606" target="_blank">
-              <i>Send Message on WhatsApp</i>
-            </a>
-          </article>
+            </article>
+          </Fade>
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <input
