@@ -1,11 +1,14 @@
 import React from "react";
-import Resume from "../../assets/Resume.pdf";
 
 const CTA = () => {
   return (
     <div className="cta">
-      <a href={Resume} download className="btn">
-        Download Resume
+      <a
+        href="https://drive.google.com/drive/folders/1FhlC0W6lFZNuZGKH0NDzOYpkiuxcUSQe?usp=sharing"
+        target="_blank"
+        className="btn"
+      >
+        My Resume
       </a>
       <a href="#contact" className="btn btn-primary">
         Contact Me

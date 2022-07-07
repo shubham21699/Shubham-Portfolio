@@ -67,7 +67,7 @@ const Projects = () => {
                 <img src={image} alt={title} />
                 <h4 style={{ margin: "3%" }}>{title}</h4>
                 <div className="project__item-cta">
-                  <a href={github} className="btn" target="_blank">
+                  <a href={github} className="btn gitLink" target="_blank">
                     Github
                   </a>
                   {demo.length > 0 && <a href={demo} className="btn btn-primary" target="_blank">

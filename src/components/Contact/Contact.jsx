@@ -59,13 +59,13 @@ const Contact = () => {
             <MdOutlineEmail size={30} />
             <h4>Send Email To</h4>
             <h5>
-              Personal ID :
+              Personal ID : {" "}
               <a href="mailto:shubham21699@gmail.com" className="emailTag">
                 <i>shubham21699@gmail.com</i>
               </a>
             </h5>
             <h5>
-              College ID :
+              College ID : {" "}
               <a href="mailto:sgoel3_be19@thapar.edu" className="emailTag">
                 <i>sgoel3_be19@thapar.edu</i>
               </a>

@@ -32,6 +32,10 @@
   margin-bottom: 1rem;
 }
 
+.gitLink {
+  color: var(--color-white);
+}
+
 /**** MEDIA QUERIES FOR PROJECTS SECTION ****/
 @media screen and (max-width: 1024px) {
   .project__container {
