@@ -14,7 +14,8 @@ const data = [
     image: hirezen,
     title: "Hirezen | A service provider portal (Ongoing)",
     github: "https://github.com/YashKumar-0307/Hirezen",
-    demo: "https://github.com/YashKumar-0307/Hirezen",
+    demo: "",
+    // demo: "https://github.com/YashKumar-0307/Hirezen",
   },
   {
     id: 2,
@@ -42,7 +43,8 @@ const data = [
     image: extension,
     title: "Chrome Extension : Tab and Link Saver",
     github: "https://github.com/shubham21699/chrome-extension-tab-and-link-saver",
-    demo: "https://github.com/shubham21699/chrome-extension-tab-and-link-saver",
+    demo: "",
+    // demo: "https://github.com/shubham21699/chrome-extension-tab-and-link-saver",
   },
   {
     id: 6,
@@ -68,9 +70,10 @@ const Projects = () => {
                   <a href={github} className="btn" target="_blank">
                     Github
                   </a>
-                  <a href={demo} className="btn btn-primary" target="_blank">
-                    Live Demo
+                  {demo.length > 0 && <a href={demo} className="btn btn-primary" target="_blank">
+                    Live Project
                   </a>
+                  }
                 </div>
               </div>
             </article>

@@ -1,7 +1,8 @@
 import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { SiCodechef } from "react-icons/si";
 
 const HeaderSocials = () => {
   return (
@@ -12,8 +13,11 @@ const HeaderSocials = () => {
       <a href="https://github.com/shubham21699" target="_blank">
         <FaGithub size={25} />
       </a>
-      <a href="https://www.instagram.com/shubham_21699/" target="_blank">
-        <FaInstagram size={25} />
+      <a href="https://leetcode.com/shubham21699/" target="_blank">
+        <SiLeetcode size={25} />
+      </a>
+      <a href="https://www.codechef.com/users/shubham21699" target="_blank">
+        <SiCodechef size={25} />
       </a>
     </div>
   );
