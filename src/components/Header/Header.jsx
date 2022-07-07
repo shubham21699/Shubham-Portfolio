@@ -1,6 +1,6 @@
 import React from "react";
 import CTA from "./CTA";
-import Me from "../../assets/me.png";
+import Me from "../../assets/me1.png";
 import "./Header.css";
 import HeaderSocials from "./HeaderSocials";
 import ReactTypingEffect from "react-typing-effect";
@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h4>Hello! I'm</h4>
+        <h3>Hello👋🏻  I'm</h3>
         <MovingComponent
           type="unfold"
           duration="1500ms"
