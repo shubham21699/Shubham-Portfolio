@@ -1,16 +1,19 @@
 import React from "react";
 import CTA from "./CTA";
-import Me from "../../assets/me1.png";
+import Me from "../../assets/me.png";
 import "./Header.css";
 import HeaderSocials from "./HeaderSocials";
 import ReactTypingEffect from "react-typing-effect";
 import { MovingComponent } from "react-moving-text";
+import FloatingComponent from "react-floating-component";
 
 const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h3>Hello👋🏻  I'm</h3>
+        <FloatingComponent>
+          <h3>Hello 👋🏻 I'm</h3>
+        </FloatingComponent>
         <MovingComponent
           type="unfold"
           duration="1500ms"

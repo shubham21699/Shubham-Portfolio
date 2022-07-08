@@ -7,13 +7,12 @@ import tesla from "../../assets/tesla.png";
 import extension from "../../assets/extension.png";
 import expense from "../../assets/expense.png";
 import candyCrush from "../../assets/candyCrush.png";
-import Zoom from "react-reveal/Zoom";
 
 const data = [
   {
     id: 1,
     image: hirezen,
-    title: "Hirezen | A service provider portal (Ongoing)",
+    title: "Hirezen | A service provider portal (Ongoing) [Team Project]",
     github: "https://github.com/YashKumar-0307/Hirezen",
     demo: "",
     // demo: "https://github.com/YashKumar-0307/Hirezen",
@@ -21,7 +20,7 @@ const data = [
   {
     id: 2,
     image: ouroom,
-    title: "Ourooms | Communicate without any privacy issues",
+    title: "Ourooms | Communicate without any privacy issues [Team Project]",
     github: "https://github.com/shubham21699/OuRoom",
     demo: "https://ouroom.herokuapp.com/",
   },
@@ -64,7 +63,6 @@ const Projects = () => {
       <div className="container project__container">
         {data.map(({ id, image, title, github, demo }) => {
           return (
-            <Zoom>
               <article key={id} className="project__item">
                 <div className="project__item-image">
                   <img src={image} alt={title} />
@@ -85,7 +83,6 @@ const Projects = () => {
                   </div>
                 </div>
               </article>
-            </Zoom>
           );
         })}
       </div>

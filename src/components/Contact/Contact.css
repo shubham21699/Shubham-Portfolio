@@ -26,9 +26,14 @@
 }
 
 .contact__option a {
+  color: rgb(139, 101, 174);
   margin-top: 0.7rem;
   display: inline-block;
   font-size: 0.8rem;
+}
+
+.contact__option a:hover {
+  color: rgb(184, 183, 183);
 }
 
 .emailTag {
@@ -56,6 +61,9 @@ textarea {
 
 /**** MEDIA QUERIES FOR CONTACT SECTION ****/
 @media screen and (max-width: 1150px) {
+  section {
+    overflow: scroll;
+  }
   .container.contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;

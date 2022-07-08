@@ -59,7 +59,7 @@ const Contact = () => {
           <Fade left>
             <article className="contact__option">
               <MdOutlineEmail size={30} />
-              <h4>Send Email To</h4>
+              <h4>Send Email To My</h4>
               <h5>
                 Personal ID :{" "}
                 <a href="mailto:shubham21699@gmail.com" className="emailTag">

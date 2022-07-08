@@ -35,13 +35,13 @@ header {
 }
 
 .me__profile {
-  /* background: linear-gradient(var(--color-primary), transparent); */
+  background: linear-gradient(var(--color-primary), transparent);
   height: 30rem;
   width: 22rem;
   position: absolute;
   left: calc(50% - 11rem);
   margin-top: 2rem;
-  border-radius: 10rem 10rem 0 0;
+  border-radius: 2rem;
   overflow: hidden;
 }
 
@@ -55,12 +55,6 @@ header {
 }
 
 /**** MEDIA QUERIES FOR HEADER ****/
-@media screen and (max-width: 1024px) {
-  header {
-    height: 70vh;
-  }
-}
-
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;

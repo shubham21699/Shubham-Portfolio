@@ -8,6 +8,7 @@ import react from "../../assets/react.png";
 import git from "../../assets/git.jpg";
 import github from "../../assets/github.png";
 import Fade from "react-reveal/Fade";
+import FloatingComponent from "react-floating-component";
 
 const Skills = () => {
   return (
@@ -15,13 +16,27 @@ const Skills = () => {
       <h2>{"<SKILLS />"}</h2>
       <Fade left>
         <div className="skill">
-          <img src={cpp} alt="cpp" className="cpp" />
-          <img src={html} alt="html" className="html" />
-          <img src={css} alt="css" className="css" />
-          <img src={js} alt="js" className="js" />
-          <img src={react} alt="react" className="react" />
-          <img src={git} alt="git" className="git" />
-          <img src={github} alt="github" className="github" />
+          <FloatingComponent>
+            <img src={cpp} alt="cpp" className="cpp" />
+          </FloatingComponent>
+          <FloatingComponent>
+            <img src={html} alt="html" className="html" />
+          </FloatingComponent>
+          <FloatingComponent>
+            <img src={css} alt="css" className="css" />
+          </FloatingComponent>
+          <FloatingComponent>
+            <img src={js} alt="js" className="js" />
+          </FloatingComponent>
+          <FloatingComponent>
+            <img src={react} alt="react" className="react" />
+          </FloatingComponent>
+          <FloatingComponent>
+            <img src={git} alt="git" className="git" />
+          </FloatingComponent>
+          <FloatingComponent>
+            <img src={github} alt="github" className="github" />
+          </FloatingComponent>
         </div>
       </Fade>
     </section>
