@@ -74,7 +74,7 @@ const Projects = () => {
                     {demo.length > 0 && (
                       <a
                         href={demo}
-                        className="btn btn-primary"
+                        className="btn btn-primary demoLink"
                         target="_blank"
                       >
                         Live Project

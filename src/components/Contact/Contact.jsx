@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Contact.css";
 import { MdOutlineEmail } from "react-icons/md";
-import { BsWhatsapp } from "react-icons/bs";
+import { FaPhoneAlt } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import MuiAlert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
@@ -76,7 +76,7 @@ const Contact = () => {
           </Fade>
           <Fade right>
             <article className="contact__option">
-              <BsWhatsapp size={30} />
+              <FaPhoneAlt size={20} />
               <h4>Mobile Number</h4>
               <h5>
                 <i>{"(+91) 9855900606"}</i>{" "}

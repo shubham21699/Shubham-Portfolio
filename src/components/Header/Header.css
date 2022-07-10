@@ -27,11 +27,19 @@ header {
   top: 25rem;
 }
 
+.header__socials a {
+  color: rgb(243, 226, 194);
+}
+
+.header__socials a:hover {
+  color: white;
+}
+
 .header__socials::after {
   content: "";
   width: 1px;
   height: 2rem;
-  background: var(--color-primary);
+  background: wheat;
 }
 
 .me__profile {

@@ -25,6 +25,10 @@
   border-color: var(--color-primary-variant);
 }
 
+.contact__option h4 {
+  font-size: 0.9rem;
+}
+
 .contact__option a {
   color: rgb(139, 101, 174);
   margin-top: 0.7rem;
@@ -57,6 +61,12 @@ textarea {
   border: 2px solid var(--color-primary-variant);
   resize: none;
   color: white;
+  transition: var(--transition);
+}
+
+input:hover,
+textarea:hover {
+  border: 1px solid wheat;
 }
 
 /**** MEDIA QUERIES FOR CONTACT SECTION ****/

@@ -13,7 +13,7 @@ const Footer = () => {
       <Fade top>
         <div className="footer__socials">
           <h3>{"< My Profiles : "}</h3>
-          <Tooltip title="LinkedIn" placement="top">
+          <Tooltip title="LinkedIn" placement="top" arrow>
             <a
               href="https://www.linkedin.com/in/shubham-goel-395b361b2/"
               target="_blank"
@@ -21,17 +21,17 @@ const Footer = () => {
               <FaLinkedinIn size={30} />
             </a>
           </Tooltip>
-          <Tooltip title="GitHub" placement="top">
+          <Tooltip title="GitHub" placement="top" arrow>
             <a href="https://github.com/shubham21699" target="_blank">
               <FaGithub size={30} />
             </a>
           </Tooltip>
-          <Tooltip title="LeetCode" placement="top">
+          <Tooltip title="LeetCode" placement="top" arrow>
             <a href="https://leetcode.com/shubham21699/" target="_blank">
               <SiLeetcode size={30} />
             </a>
           </Tooltip>
-          <Tooltip title="CodeChef" placement="top">
+          <Tooltip title="CodeChef" placement="top" arrow>
             <a
               href="https://www.codechef.com/users/shubham21699"
               target="_blank"

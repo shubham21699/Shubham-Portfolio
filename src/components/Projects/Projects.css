@@ -32,8 +32,8 @@
   margin-bottom: 1rem;
 }
 
-.gitLink {
-  color: var(--color-white);
+.gitLink, .demoLink {
+  color: wheat;
 }
 
 /**** MEDIA QUERIES FOR PROJECTS SECTION ****/
